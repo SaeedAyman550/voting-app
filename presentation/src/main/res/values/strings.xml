@@ -1,0 +1,182 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="candidates">candidates</string>
+    <string name="origin">origin</string>
+    <string name="Scientific_and_professional_life">Scientific and professional life</string>
+    <string name="Notable_contributions">Notable contributions</string>
+    <string name="winer">Winer</string>
+    <string name="result">Result</string>
+    <string name="details">Details</string>
+    <string name="number_of_votes">Number OF Votes</string>
+    <string name="vaild_votes">Vaild Votes</string>
+    <string name="invaild_votes">Invaild Votes</string>
+    <string name="login_user_text_view_bold">Enter Voter id number</string>
+    <string name="login_user_text_view_normal">Enter the unique 12 digit number written on your id card for verfication purpose</string>
+    <string name="login_user_edit_text">Voter id number</string>
+    <string name="confirm_login_text_view_bold">Protect your account\n with biometrics</string>
+    <string name="confirm_login_text_view_normal">Add an extra layer of security to DigiVote</string>
+    <string name="login_user_button">Next</string>
+    <string name="confirm_login_capture_button">Capture</string>
+    <string name="confirm_login_confirm_button">Confirm</string>
+    <string name="identification_text_voter">Voter</string>
+    <string name="identification_text_candidate">Candidate</string>
+    <string name="identification_text_bold">I am</string>
+    <string name="create_candidate">Create Candidate</string>
+    <string name="create_candidate_edit_text_name">Name</string>
+    <string name="create_candidate_text_date_of_bbirth">Date Of Birth</string>
+    <string name="create_candidate_political_party_text">Political Party</string>
+    <string name="create_candidate_radio_button_democrat">democrate</string>
+    <string name="create_candidate_radio_button_republican">republican</string>
+    <string name="create_candidate_add_agendas_text">Add another agenda</string>
+    <string name="agenta_showing_item_abstraction_text">Abstraction</string>
+    <string name="agenta_showing_item_summary_text">Summary</string>
+    <string name="create_candidate_save_button">Save</string>
+    <string name="candidates_details_vote_button">Vote</string>
+    <string name="agenta_showing_item_agendas_text">Agendas</string>
+    <string name="accept_voting_button_text">Back</string>
+    <string name="show_not_voting_text1">Post-Vote Ballot</string>
+    <string name="accept_voting_text2">Thank you for submiting your ballot for</string>
+    <string name="accept_voting_text3">DigVote - 2023 Presidential Elections</string>
+    <string name="identification_text_user">Voter</string>
+    <string name="identification_text_admin">Admin</string>
+    <string name="identification_create_text_bold">Create</string>
+    <string name="admin_login_text_user_name">User Name</string>
+    <string name="admin_login_text_password">Password</string>
+    <string name="agenta_creation_item_summary_text">Summary</string>
+    <string name="agenta_creation_item_abstraction_text">Abstraction</string>
+    <string name="selected_result">Selected Result</string>
+    <string name="show_not_voting_text2">You don\'t vote yet</string>
+    <string name="show_not_voting_text3">Vote now</string>
+    <string name="show_not_voting_button_vote">Vote</string>
+    <string name="admin_login_text_login">Login</string>
+    <string name="confirm_login_user_text_sucess_upload_image">Sucess Upload Image</string>
+    <string name="confirm_login_user_text_failed_upload_image">Failed To Upload Image</string>
+    <string name="voting_dailog_vote_text">Vote</string>
+    <string name="voting_dailog_sure_text">Are you sure you want to vote for this candidate?</string>
+    <string name="voting_dailog_no_button">No</string>
+    <string name="voting_dailog_yes_button">Yes</string>
+    <string name="voting_result_winer_candidate_text">Winer Candidate</string>
+    <string name="user_info_include_not_vote_candidate_vote_button">Vote</string>
+    <string name="user_info_pesonal_info_text">Personal Information</string>
+    <string name="user_info_voting_candidate_text">Voting Candidate</string>
+    <string name="user_info_log_out_button">LogOut</string>
+    <string name="user_info_tool_bar_text_view">Voter Information</string>
+    <string name="winer_candidate_cong_text">Congratulations</string>
+    <string name="create_candidate_edit_text_code">Code</string>
+    <string name="identification_text_time">Time</string>
+    <string name="create_voter_edit_text_id">Id</string>
+    <string name="create_voter_edit_text_city">City</string>
+    <string name="create_voter_edit_text_name">Name</string>
+    <string name="create_voter_text_view_date">Date Of Birth Day</string>
+    <string name="user_info_include_vote_candidate_delete_vote_button">Delete Vote</string>
+    <string name="user_info_include_vote_candidate_not_vote_text">You Are Not Voting Yet</string>
+    <string name="set_time_number_of_hours">Number Of Hours</string>
+    <string name="set_time_save_button">Save</string>
+    <string name="set_time_time_of_voting">Time Of Voting</string>
+    <string name="set_time_first_one_to_set_time">That Is The First One To Set The Voting Time \n Enter Number Of Voting Time</string>
+    <string name="set_time_time_to_update_voting_time_before_time">There Are Time Set Before Ended At </string>
+    <string name="set_time_time_to_update_voting_time_after_time">To Update It Enter Number Of Voting Time</string>
+    <string-array name="year">
+        <item>year</item>
+        <item>2000</item>
+        <item>1999</item>
+        <item>1998</item>
+        <item>1997</item>
+        <item>1996</item>
+        <item>1995</item>
+        <item>1994</item>
+        <item>1993</item>
+        <item>1992</item>
+        <item>1991</item>
+        <item>1990</item>
+        <item>1989</item>
+        <item>1988</item>
+        <item>1987</item>
+        <item>1986</item>
+        <item>1985</item>
+        <item>1984</item>
+        <item>1983</item>
+        <item>1982</item>
+        <item>1981</item>
+        <item>1980</item>
+        <item>1979</item>
+        <item>1978</item>
+        <item>1977</item>
+        <item>1976</item>
+        <item>1975</item>
+        <item>1974</item>
+        <item>1973</item>
+        <item>1972</item>
+        <item>1971</item>
+        <item>1970</item>
+        <item>1969</item>
+        <item>1968</item>
+        <item>1967</item>
+        <item>1966</item>
+        <item>1965</item>
+        <item>1964</item>
+        <item>1963</item>
+        <item>1962</item>
+        <item>1961</item>
+        <item>1960</item>
+        <item>1959</item>
+        <item>1958</item>
+        <item>1957</item>
+        <item>1956</item>
+        <item>1955</item>
+        <item>1954</item>
+        <item>1953</item>
+        <item>1952</item>
+        <item>1951</item>
+        <item>1950</item>
+    </string-array>
+    <string-array name="month">
+        <item>Month</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="day">
+        <item>Day</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+</resources>

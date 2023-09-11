@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        >
+        <ProgressBar
+            android:id="@+id/create_voter_progress_par"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/create_voter_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/tool_bar_ground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/back_white" />
+
+            <TextView
+                android:id="@+id/create_voter_tool_bar_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="create voter"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/create_voter"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:text=""
+            android:background="@color/tool_bar_ground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_voter_tool_bar" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/create_voter_circleImage_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/user2"
+            app:layout_constraintBottom_toBottomOf="@+id/create_voter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_voter" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/create_voter_edit_circleImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/create_profile_image_background"
+            android:src="@drawable/edit"
+            app:layout_constraintEnd_toEndOf="@+id/create_voter_circleImage_profile"
+            app:layout_constraintStart_toEndOf="@+id/create_voter_circleImage_profile"
+            app:layout_constraintTop_toBottomOf="@+id/create_voter" />
+
+
+
+        <EditText
+            android:id="@+id/create_voter_edit_text_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:paddingStart="8dp"
+            android:hint="@string/create_voter_edit_text_id"
+            android:maxLength="14"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_voter_circleImage_profile" />
+
+
+        <EditText
+            android:id="@+id/create_voter_edit_text_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingStart="8dp"
+            android:hint="@string/create_voter_edit_text_name"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_voter_edit_text_id" />
+
+
+
+        <EditText
+            android:id="@+id/create_voter_edit_text_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/create_voter_edit_text_city"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_voter_edit_text_name" />
+
+        <TextView
+            android:id="@+id/create_voter_date_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="@string/create_voter_text_view_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_voter_edit_text_city" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_voter_date_text">
+
+            <Spinner
+                android:id="@+id/create_voter_spinner_year"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_back_ground"
+                android:entries="@array/year"
+                android:padding="8dp"
+                />
+
+            <Spinner
+                android:id="@+id/create_voter_spiner_month"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_back_ground"
+                android:entries="@array/month"
+                android:padding="8dp"
+                />
+
+            <Spinner
+                android:id="@+id/create_voter_spiner_day"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_back_ground"
+                android:entries="@array/day"
+                android:padding="8dp"
+                />
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/create_voter_save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_background"
+            android:text="@string/create_candidate_save_button"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.80" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

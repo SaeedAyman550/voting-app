@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <stroke android:color="@color/white"/>
+        <stroke android:width="3dp"/>
+        <gradient android:endColor="@color/tool_bar_ground"
+            android:startColor="@color/tool_bar_ground"
+            android:centerColor="@color/tool_bar_ground"/>
+        <corners android:radius="50dp"/>
+        <padding android:top="10dp"
+            android:bottom="10dp"
+            android:left="10dp"
+            android:right="10dp"/>
+    </shape>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.8">
+      <module name="Voting.app" target="11" />
+      <module name="Voting.data" target="11" />
+      <module name="Voting.Domain" target="11" />
+      <module name="Voting.presentation" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

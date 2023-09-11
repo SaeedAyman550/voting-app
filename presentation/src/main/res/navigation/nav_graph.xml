@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/splash">
+
+    <fragment
+        android:id="@+id/splash"
+        android:name="com.example.pressentation.splash"
+        android:label="splash">
+        <deepLink app:uri="Voting://example.voting.app/Splash" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/candidates"
+        android:name="com.example.pressentation.ui.candidates.Candidates"
+        android:label="Candidates">
+        <deepLink app:uri="Voting://example.voting.app/Candidates" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginVoter"
+        android:name="com.example.pressentation.ui.login_voter.LoginVoter"
+        android:label="LoginVoter">
+        <deepLink app:uri="Voting://example.voting.app/LoginVoter" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/confirmLoginVoter"
+        android:name="com.example.pressentation.ui.login_voter.ConfirmLoginVoter"
+        android:label="ConfirmLoginVoter">
+        <deepLink app:uri="Voting://example.voting.app/ConfirmLoginVoter/{id}" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue=''
+            />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/votingResult"
+        android:name="com.example.pressentation.ui.voting_result.VotingResult"
+        android:label="VotingResult">
+        <deepLink app:uri="Voting://example.voting.app/VotingResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedResult"
+        android:name="com.example.pressentation.ui.selected_result.SelectedResult"
+        android:label="SelectedResult">
+        <deepLink app:uri="Voting://example.voting.app/SelectedResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginAdmin"
+        android:name="com.example.pressentation.ui.admin.LoginAdmin"
+        android:label="LoginAdmin">
+        <deepLink app:uri="Voting://example.voting.app/LoginAdmin" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCandidate"
+        android:name="com.example.pressentation.ui.admin.CreateCandidate"
+        android:label="CreateCandidate">
+        <deepLink app:uri="Voting://example.voting.app/CreateCandidate" />
+    </fragment>
+    <fragment
+        android:id="@+id/createVoter"
+        android:name="com.example.pressentation.ui.admin.CreateVoter"
+        android:label="CreateVoter">
+        <deepLink app:uri="Voting://example.voting.app/CreateVoter" />
+    </fragment>
+    <fragment
+        android:id="@+id/voterInfo"
+        android:name="com.example.pressentation.ui.voter_info.VoterInfo"
+        android:label="VoterInfo">
+        <deepLink app:uri="Voting://example.voting.app/VoterInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/candidatesDetails"
+        android:name="com.example.pressentation.ui.candidates.CandidatesDetails"
+        android:label="CandidatesDetails">
+        <deepLink app:uri="Voting://example.voting.app/CandidatesDetails/{candidate_id}" />
+        <argument
+            android:name="candidate_id"
+            app:argType="string"
+            android:defaultValue='' />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/AdminAuthorization"
+        android:name="com.example.pressentation.ui.identification.AdminAuthorization"
+        android:label="VoterOrCandidate">
+        <deepLink app:uri="Voting://example.voting.app/AdminAuthorization" />
+    </fragment>
+    <fragment
+        android:id="@+id/acceptVoting"
+        android:name="com.example.pressentation.ui.candidates.AcceptVoting"
+        android:label="AcceptVoting">
+        <deepLink app:uri="Voting://example.voting.app/AcceptVoting" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminOrVoter"
+        android:name="com.example.pressentation.ui.identification.AdminOrVoter"
+        android:label="AdminOrVoter">
+        <deepLink app:uri="Voting://example.voting.app/AdminOrVoter" />
+    </fragment>
+
+
+    <dialog
+        android:id="@+id/votingDialog"
+        android:name="com.example.pressentation.ui.candidates.VotingDailog"
+        android:label="VotingDailog" >
+    <deepLink app:uri="Voting://example.voting.app/VotingDailog/{candidate_id}" />
+        <argument
+            android:name="candidate_id"
+            app:argType="string"
+            android:defaultValue='' />
+    </dialog>
+    <fragment
+        android:id="@+id/setTime"
+        android:name="com.example.pressentation.ui.admin.SetTime"
+        android:label="fragment_set_time"
+        tools:layout="@layout/fragment_set_time" >
+        <deepLink app:uri="Voting://example.voting.app/SetTime" />
+    </fragment>
+
+
+</navigation>

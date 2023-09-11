@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="0dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        >
+        <ProgressBar
+            android:id="@+id/create_candidate_progress_par"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/create_candidate_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/tool_bar_ground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/back_white" />
+
+            <TextView
+                android:id="@+id/create_candidate_tool_bar_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/create_candidate"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/create_candidate"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:text=""
+            android:background="@color/tool_bar_ground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_candidate_tool_bar" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/create_candidate_circleImage_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/user2"
+            app:layout_constraintBottom_toBottomOf="@+id/create_candidate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_candidate" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/create_candidate_edit_circleImage"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/create_profile_image_background"
+            android:src="@drawable/edit"
+            app:layout_constraintEnd_toEndOf="@+id/create_candidate_circleImage_profile"
+            app:layout_constraintStart_toEndOf="@+id/create_candidate_circleImage_profile"
+            app:layout_constraintTop_toBottomOf="@+id/create_candidate" />
+
+
+        <EditText
+            android:id="@+id/create_candidate_edit_text_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:paddingStart="8dp"
+            android:hint="@string/create_candidate_edit_text_name"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_candidate_circleImage_profile" />
+
+        <EditText
+            android:id="@+id/create_candidate_edit_text_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/create_candidate_edit_text_code"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_candidate_edit_text_name" />
+
+        <TextView
+            android:id="@+id/create_candidate_date_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="@string/create_candidate_text_date_of_bbirth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_candidate_edit_text_code" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_candidate_date_text">
+
+            <Spinner
+                android:id="@+id/create_candidate_spinner_year"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_back_ground"
+                android:entries="@array/year"
+                android:padding="8dp"
+                />
+
+            <Spinner
+                android:id="@+id/create_candidate_spiner_month"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_back_ground"
+                android:entries="@array/month"
+                android:padding="8dp"
+                />
+
+            <Spinner
+                android:id="@+id/create_candidate_spiner_day"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_back_ground"
+                android:entries="@array/day"
+                android:padding="8dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/political_part_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="@string/create_candidate_political_party_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/political_part_text_view">
+
+
+            <RadioButton
+                android:id="@+id/create_candidate_radio_button_democrat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:text="@string/create_candidate_radio_button_democrat"
+                android:textColor="#8D000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                />
+
+            <RadioButton
+                android:id="@+id/create_candidate_radio_button_republican"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:text="@string/create_candidate_radio_button_republican"
+                android:textColor="#8D000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/create_candidates_recy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <TextView
+            android:id="@+id/create_candidate_add_agendas_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/create_candidate_add_agendas_text"
+            android:textColor="@color/tool_bar_ground"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_candidates_recy" />
+
+        <Button
+            android:id="@+id/create_candidate_save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_background"
+            android:text="@string/create_candidate_save_button"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_candidate_add_agendas_text"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
